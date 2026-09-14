@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Greenwave | Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="greenwave-mockup.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span>Secure checkout · Prong type locked from the product page · Free to mock — no real charge</span>
+      <span><a href="tel:18005066098">Need help? 1-800-506-6098</a></span>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="greenwave-homepage-mockup.html">Greenwave</a>
+      <div class="header-actions">
+        <a class="btn btn-line" href="greenwave-homepage-mockup.html">Continue shopping</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout wrap">
+    <p class="steps-bar"><span class="is-on">1 Cart</span><span class="is-on">2 Information</span><span>3 Pay</span></p>
+    <div class="chk-grid">
+      <form class="panel" id="chkForm">
+        <h2>Keep this checkout short</h2>
+        <p style="color:var(--muted);margin-bottom:16px;font-size:14px">Current WooCommerce dumps people into extra fields. This mockup is: contact, ship, pay. Express wallets first so they don’t abandon.</p>
+        <div class="pay-row">
+          <button type="button" class="pay-apple">Apple Pay</button>
+          <button type="button" class="pay-paypal">PayPal</button>
+        </div>
+        <p style="text-align:center;color:var(--muted);font-size:12px;margin:8px 0 16px">or fill in below</p>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone (for kit questions)">
+        <div class="grid-2">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+        </div>
+        <input type="text" placeholder="Street address" required>
+        <div class="grid-2">
+          <input type="text" placeholder="City" required>
+          <input type="text" placeholder="State" required>
+        </div>
+        <div class="grid-2">
+          <input type="text" placeholder="ZIP" required>
+          <select><option>United States</option><option>Canada</option><option>Mexico</option><option>Japan</option></select>
+        </div>
+        <label style="display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--muted);margin:8px 0 16px">
+          <input type="checkbox" checked style="width:auto;height:auto;margin-top:3px"> I confirm the prong type in my cart matches my wall outlets.
+        </label>
+        <button class="btn btn-primary" id="placeOrder" type="submit" style="width:100%">Place order (mock)</button>
+      </form>
+
+      <aside class="panel">
+        <h2>Order</h2>
+        <div id="chkItems"></div>
+        <div class="summary-row"><span>Shipping</span><span>Calculated next</span></div>
+        <div class="summary-row total"><span>Total</span><span id="chkTotal">$0</span></div>
+        <p style="font-size:13px;color:var(--muted);margin-top:14px">Each line shows 2-prong or 3-prong so nobody checks out the wrong plug. Call 1-800-506-6098 before you pay if the kit size still feels off.</p>
+        <a href="greenwave-homepage-mockup.html#finder" style="color:#1b8a54;font-weight:700;font-size:14px">Wrong size? Back to finder →</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap"><div class="foot-bottom">Checkout mockup · no real payment · Greenwave Filters</div></div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><strong>Cart</strong><button class="icon-btn" id="closeCart" type="button">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="summary-row total"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+    </div>
+  </aside>
+  <script src="greenwave-mockup.js"></script>
+</body>
+</html>

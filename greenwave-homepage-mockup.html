@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenwave Filters — Dirty Electricity Filters | Homepage Mockup</title>
+  <meta name="description" content="Plug-in dirty electricity filters for homes, apartments, offices, and classrooms. Measure with the EMI meter. UL certified.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="greenwave-mockup.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span><strong>Don’t buy the wrong kit.</strong> Use the finder — or start with the $200 test kit.</span>
+      <span><a href="tel:18005066098">1-800-506-6098</a> · US / CA / MX / JP · UL certified</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="greenwave-homepage-mockup.html">Greenwave</a>
+      <nav class="nav" id="nav">
+        <a class="is-active" href="greenwave-homepage-mockup.html">Home</a>
+        <a href="#shop">Shop kits</a>
+        <a href="#how">How it works</a>
+        <a href="greenwave-product-mockup.html">Product</a>
+        <a href="#faq">Help</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M4 5h2l2.2 10h9.6l1.7-7H8"/></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <a class="btn btn-primary" href="#finder">Find my kit</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="hero-overline">Dirty electricity filters for healthier spaces</p>
+          <h1>Find the right filters before shoppers ever hit the cart.</h1>
+          <p class="lede">Greenwave filters plug into outlets and reduce high-frequency electrical noise on wiring. This new funnel makes the buying path simple: choose the space, pick the outlet type, see the kit, and check out with confidence.</p>
+          <div class="hero-actions">image.png
+            <a class="btn btn-primary" href="#finder">Find my kit</a>
+            <a class="btn btn-ghost" href="greenwave-product-mockup.html?kit=test">Start with the test kit — $200</a>
+          </div>
+          <div class="hero-metrics" aria-label="Greenwave buying path highlights">
+            <div><strong>30 sec</strong><span>kit finder</span></div>
+            <div><strong>$80+</strong><span>entry kits</span></div>
+            <div><strong>2 / 3</strong><span>prong picker</span></div>
+          </div>
+          <div class="hero-proof">
+            <span><i class="dot"></i> UL certified · RoHS</span>
+            <span><i class="dot"></i> Plug-through outlet</span>
+            <span><i class="dot"></i> 2-prong or 3-prong</span>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <div class="product-visual">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80" alt="Bright, calm living room with natural light">
+            <a class="filter-card" href="greenwave-product-mockup.html?kit=1br-house&prong=3">
+              <div>
+                <b>1 Bedroom House Kit</b>
+                <small>8 filters · 700–1,000 sq ft · 3-prong</small>
+              </div>
+              <div class="meter-chip">
+                <strong>$292</strong>
+                <span>Shop kit</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#f7faf6" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,90 L0,90 Z"/></svg>
+    </section>
+
+    <section class="finder" id="finder">
+      <div class="wrap">
+        <div class="finder-box">
+          <h2>Don’t leave without the right kit.</h2>
+          <p>Most people bounce because they don’t know how many filters they need, or 2-prong vs 3-prong. Answer two questions.</p>
+          <div class="finder-row">
+            <div class="field">
+              <label for="spaceType">Your space</label>
+              <select id="spaceType">
+                <option value="house">House</option>
+                <option value="apartment">Apartment / condo</option>
+                <option value="office">Office</option>
+                <option value="classroom">Classroom</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="spaceSize">Size</label>
+              <select id="spaceSize"></select>
+            </div>
+            <div class="field">
+              <label for="prongType">Outlet type</label>
+              <select id="prongType">
+                <option value="3">3-prong (most US homes)</option>
+                <option value="2">2-prong</option>
+              </select>
+            </div>
+            <button class="btn btn-dark" type="button" id="findBtn" style="height:50px">Show my kit</button>
+          </div>
+          <div class="finder-result" id="finderResult"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="wrap">
+        <div class="trust">
+          <article>
+            <h3>UL certified</h3>
+            <p>120V, 15A safety certified. RoHS — no lead, mercury, or cadmium.</p>
+          </article>
+          <article>
+            <h3>Plug-through outlet</h3>
+            <p>The filter keeps the outlet usable. Plug a lamp or charger into the base.</p>
+          </article>
+          <article>
+            <h3>Measure the difference</h3>
+            <p>The EMI meter shows dirty electricity on the wiring — before and after.</p>
+          </article>
+          <article>
+            <h3>Not Wi‑Fi blocking</h3>
+            <p>These target electrical noise on your wires. Not RF, not magnetic fields.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop" style="padding-top:20px">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Shop</p>
+          <h2>Every important product, on the first scroll.</h2>
+          <p>Kits by space so people stop guessing. Volume pricing on individual filters if a kit isn’t quite right.</p>
+        </div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img">
+              <span class="badge gold">Start here if unsure</span>
+              <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=900&q=80" alt="Kitchen outlets and modern appliances">
+            </div>
+            <div class="product-body">
+              <h3>Dirty Electricity Test Kit</h3>
+              <p>Meter + 2 filters + outlet tester. Prove it in your own home before you kit the whole house.</p>
+              <div class="price">$200</div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=starter&prong=3">View test path</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"test","name":"Dirty Electricity Test Kit","price":200,"prong":"3","qty":1}'>Add test kit</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="badge">Most popular</span>
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="1 bedroom house living space">
+            </div>
+            <div class="product-body">
+              <h3>1 Bedroom House Kit</h3>
+              <p>8 filters for about 4–5 rooms, 700–1,000 sq ft. Choose 2-prong or 3-prong on the product page.</p>
+              <div class="price">$292 <small>8 filters</small></div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=1br-house&prong=3">View kit</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"1br-house","name":"1 Bedroom House Kit","price":292,"prong":"3","qty":1}'>Add 3-prong kit</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Larger family home bedroom">
+            </div>
+            <div class="product-body">
+              <h3>2 Bedroom House Kit</h3>
+              <p>12 filters · 1,000–1,400 sq ft. The next step when a 1-bedroom kit won’t cover the house.</p>
+              <div class="price">$399 <small>12 filters</small></div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=2br-house&prong=3">View kit</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"2br-house","name":"2 Bedroom House Kit","price":399,"prong":"3","qty":1}'>Add to cart</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80" alt="Apartment interior">
+            </div>
+            <div class="product-body">
+              <h3>1 Bedroom Apartment Kit</h3>
+              <p>7 filters for 500–800 sq ft condos and apartments. Smaller footprint than a house kit.</p>
+              <div class="price">$255 <small>7 filters</small></div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=1br-apt&prong=3">View kit</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"1br-apt","name":"1 Bedroom Apartment Kit","price":255,"prong":"3","qty":1}'>Add to cart</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80" alt="Private office">
+            </div>
+            <div class="product-body">
+              <h3>Office &amp; classroom</h3>
+              <p>Standard office 2 filters $80 · Executive $120 · Classroom 6 filters $219.</p>
+              <div class="price">From $80</div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=office&prong=3">View office kit</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"office","name":"Standard Office Kit","price":80,"prong":"3","qty":1}'>Add office kit</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80" alt="Single filter and electronics">
+            </div>
+            <div class="product-body">
+              <h3>Individual filters</h3>
+              <p>$40 each (1–4) · $36.50 (5–9) · $33.25 (10+). US 2-prong or 3-prong. Euro from $56–$60.</p>
+              <div class="price">$40 <small>as low as $33.25</small></div>
+              <a class="btn btn-line" href="greenwave-product-mockup.html?kit=starter&prong=3">See volume pricing</a>
+              <button class="btn btn-primary" type="button" data-quick-add='{"id":"filter","name":"Greenwave Filter (3-prong)","price":40,"prong":"3","qty":1}'>Add 1 filter</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. No electrician.</h2>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <h3>Pick 2-prong or 3-prong</h3>
+            <p>Look at the outlet. Most US homes are 3-prong. Get this right and you don’t eat a return.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">2</div>
+            <h3>Plug filters into outlets</h3>
+            <p>They shunt dirty electricity (EMI) on the circuit wiring while normal 60Hz power still flows.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">3</div>
+            <h3>Read the meter</h3>
+            <p>The Broadband EMI meter shows levels on the wiring. Use it to place filters where they actually help.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=80" alt="Calm living room in a family home">
+        <div>
+          <p class="eyebrow">Why people stall</p>
+          <h2 style="font-size:40px;letter-spacing:-.03em;line-height:1.15;font-weight:600">The current site loses shoppers in the store.</h2>
+          <p style="color:var(--muted);margin-top:12px">Walls of kits, 2-prong vs 3-prong buried, empty reviews, and a cart that doesn’t confirm they bought the right thing. This homepage answers the three drop-off questions before checkout.</p>
+          <ul class="checklist">
+            <li><span class="check">✓</span> How many filters for my rooms / sq ft?</li>
+            <li><span class="check">✓</span> 2-prong or 3-prong — chosen before add to cart.</li>
+            <li><span class="check">✓</span> Not sure it works? Test kit $200, then upgrade.</li>
+            <li><span class="check">✓</span> This is dirty electricity on wires — not a Wi‑Fi shield.</li>
+          </ul>
+          <a class="btn btn-dark" href="#finder">Use the kit finder</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="quotes">
+          <article class="quote featured">
+            <div class="stars">★★★★★</div>
+            <h3>“Our son is calmer — he seems less frazzled and happier.”</h3>
+            <p>The line people already trust. Put it on the homepage, not buried under long copy.</p>
+            <cite>Greenwave customer</cite>
+          </article>
+          <article class="quote">
+            <div class="stars">★★★★★</div>
+            <h3>Plug in. See the meter drop.</h3>
+            <p>Buyers who can measure stay. That’s why the test kit and meter belong next to every kit CTA.</p>
+            <cite>Conversion note for the rework</cite>
+          </article>
+          <article class="quote">
+            <div class="stars">★★★★☆</div>
+            <h3>Amazon already has social proof.</h3>
+            <p>The live product pages currently show 0 reviews. Surface ratings and “how many filters” on the PDP.</p>
+            <cite>Audit finding</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" style="background:#fff">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Close the sale before they leave.</h2>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>2-prong or 3-prong — which do I buy?</summary>
+            <p>Look at the wall outlet. If it has a round ground hole, choose 3-prong (Type B). If not, choose 2-prong (Type A). Both are for 100–120V systems in the US, Canada, Mexico, and Japan. European Schuko filters are a separate product.</p>
+          </details>
+          <details>
+            <summary>How many filters do I need?</summary>
+            <p>Use the finder above. Example: 1 bedroom house (700–1,000 sq ft) is 8 filters / $292. Kitchens and living rooms often need 3–4; bedrooms 2; bathrooms 1. A meter helps you place them.</p>
+          </details>
+          <details>
+            <summary>Will this block Wi‑Fi or 5G?</summary>
+            <p>No. Greenwave filters reduce dirty electricity (EMI) on building wiring. They are not RF, electric-field, or magnetic-field meters or shields. That’s the #1 confusion that causes returns.</p>
+          </details>
+          <details>
+            <summary>What if I don’t know if I have a dirty electricity problem?</summary>
+            <p>Start with the $200 test kit: EMI meter, two filters, and an outlet tester. If you see a drop, kit the rest of the house.</p>
+          </details>
+        </div>
+        <div class="cta-band" style="margin-top:36px">
+          <div>
+            <h2>Ready to kit the house?</h2>
+            <p>Finder first. Test kit if you’re unsure. Call 1-800-506-6098 if you still might buy the wrong size.</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="#finder">Find my kit</a>
+            <a class="btn btn-ghost" href="greenwave-checkout-mockup.html">View checkout mockup</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="logo" href="greenwave-homepage-mockup.html" style="color:#fff">Greenwave</a>
+          <p style="margin-top:12px">Dirty electricity filters, EMI meter, and kits for homes, apartments, offices, and classrooms. Mockup for conversion rework — not the live store.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#shop">House kits</a>
+          <a href="#shop">Test kit</a>
+          <a href="greenwave-product-mockup.html">Product page</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="#faq">2 vs 3 prong</a>
+          <a href="tel:18005066098">1-800-506-6098</a>
+          <a href="mailto:info@greenwavefilters.com">info@greenwavefilters.com</a>
+        </div>
+        <div>
+          <h4>Trust</h4>
+          <a href="#">UL certified</a>
+          <a href="#">RoHS</a>
+          <a href="greenwave-checkout-mockup.html">Checkout</a>
+        </div>
+      </div>
+      <div class="foot-bottom">Homepage mockup · Greenwave Filters · For client review</div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Cart">
+    <div class="drawer-head">
+      <strong>Cart</strong>
+      <button class="icon-btn" id="closeCart" type="button" aria-label="Close">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="summary-row total"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+      <p style="font-size:12px;color:#5d6f66;margin:8px 0 12px">Prong type is saved on each line so checkout doesn’t ship the wrong plug.</p>
+      <a class="btn btn-primary" href="greenwave-checkout-mockup.html" style="width:100%">Checkout</a>
+    </div>
+  </aside>
+
+  <script src="greenwave-mockup.js"></script>
+</body>
+</html>
