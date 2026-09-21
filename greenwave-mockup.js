@@ -1,6 +1,6 @@
 const GW_KITS = {
   house: [
-    { id: "starter", name: "2 Room Starter Kit", filters: 4, rooms: "2 rooms · 300–500 sq ft", price: 160, sku: "2-room" },
+    { id: "starter", name: "2 Room Starter Kit", filters: 4, rooms: "2 Rooms · 300–500 Sq. Ft.", price: 160, sku: "2-room" },
     { id: "1br-house", name: "1 Bedroom House Kit", filters: 8, rooms: "4–5 rooms · 700–1,000 sq ft", price: 292, sku: "1br-house", popular: true },
     { id: "2br-house", name: "2 Bedroom House Kit", filters: 12, rooms: "5–7 rooms · 1,000–1,400 sq ft", price: 399, sku: "2br-house" },
     { id: "3br-house", name: "3 Bedroom House Kit", filters: 16, rooms: "6–8 rooms · 1,400–1,800 sq ft", price: 532, sku: "3br-house" },
@@ -103,7 +103,7 @@ function fillSizes() {
   const size = document.getElementById("spaceSize");
   if (!space || !size) return;
   const kits = GW_KITS[space.value] || [];
-  size.innerHTML = kits.map((k) => `<option value="${k.id}">${k.name} — ${k.filters} filters</option>`).join("");
+  size.innerHTML = kits.map((k) => `<option value="${k.id}">${k.rooms}</option>`).join("");
 }
 
 function recommend() {
@@ -116,12 +116,13 @@ function recommend() {
   box.classList.add("is-on");
   box.innerHTML = `
     <div>
+      <p class="finder-rec-kicker">Recommended kit</p>
       <b>${kit.name}</b>
-      <div><span>${kit.filters} filters · ${kit.rooms} · ${prong}-prong · ${money(kit.price)}</span></div>
+      <div><span>${kit.filters} Filters · ${kit.rooms} · ${prong}-Prong</span></div>
     </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <a class="btn btn-primary" href="greenwave-product-mockup.html?kit=${kit.id}&prong=${prong}">View kit</a>
-      <button class="btn btn-line" type="button" data-add='${JSON.stringify({ id: kit.id, name: kit.name, price: kit.price, prong, qty: 1 }).replace(/'/g, "&#39;")}'>Add to cart</button>
+    <div class="finder-rec-actions">
+      <a class="btn btn-line" href="greenwave-product-mockup.html?kit=${kit.id}&prong=${prong}">View kit</a>
+      <button class="btn btn-primary" type="button" data-add='${JSON.stringify({ id: kit.id, name: kit.name, price: kit.price, prong, qty: 1 }).replace(/'/g, "&#39;")}'>Add to cart</button>
     </div>
   `;
   box.querySelector("[data-add]")?.addEventListener("click", (e) => {
@@ -214,4 +215,23 @@ document.addEventListener("DOMContentLoaded", () => {
       addToCart(JSON.parse(btn.getAttribute("data-quick-add")));
     });
   });
+
+  revealInit();
 });
+
+function revealInit() {
+  const items = document.querySelectorAll("[data-reveal]");
+  if (!items.length) return;
+  if (!("IntersectionObserver" in window)) {
+    items.forEach((el) => el.classList.add("is-in"));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (!entry.isIntersecting) return;
+      setTimeout(() => entry.target.classList.add("is-in"), i * 110);
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.18, rootMargin: "0px 0px -60px 0px" });
+  items.forEach((el) => io.observe(el));
+}
