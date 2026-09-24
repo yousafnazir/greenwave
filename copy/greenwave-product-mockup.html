@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1 Bedroom House Kit — Greenwave | Product Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="greenwave-mockup.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <span>Choose 2-prong or 3-prong here — don’t guess at checkout.</span>
+      <span><a href="tel:18005066098">1-800-506-6098</a></span>
+    </div>
+  </div>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="greenwave-homepage-mockup.html">Greenwave</a>
+      <nav class="nav" id="nav">
+        <a href="greenwave-homepage-mockup.html">Home</a>
+        <a href="greenwave-homepage-mockup.html#shop">Shop kits</a>
+        <a class="is-active" href="greenwave-product-mockup.html">Product</a>
+        <a href="greenwave-homepage-mockup.html#faq">Help</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M4 5h2l2.2 10h9.6l1.7-7H8"/></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <a class="btn btn-primary" href="greenwave-homepage-mockup.html#finder">Find my kit</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="pdp wrap">
+    <p class="crumbs"><a href="greenwave-homepage-mockup.html">Home</a> / Shop / <span id="pdpCrumb">1 Bedroom House Kit</span></p>
+    <div class="pdp-grid">
+      <div class="pdp-gallery">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" alt="Home interior representing a 1 bedroom house kit">
+      </div>
+      <div class="pdp-buy">
+        <p class="eyebrow">Filter kit · UL certified</p>
+        <h1 id="pdpName">1 Bedroom House Kit</h1>
+        <p id="pdpMeta">4–5 rooms · 700–1,000 sq ft · plug-through outlet</p>
+        <div class="price" id="pdpPrice">$292 <small>8 filters</small></div>
+        <p style="color:var(--muted)">Plug-in dirty electricity filters for US / CA / MX / JP 100–120V outlets. This is the kit most 1-bedroom houses should start with — not a pile of unnamed SKUs.</p>
+
+        <p style="font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:18px">Outlet type — required</p>
+        <div class="prong">
+          <button type="button" data-prong="3" class="is-on">3-prong (Type B)</button>
+          <button type="button" data-prong="2">2-prong (Type A)</button>
+        </div>
+        <p style="font-size:13px;color:var(--muted)">Look at the wall. Round ground hole = 3-prong. Wrong prong is the #1 return.</p>
+
+        <div class="qty-row">
+          <input id="qty" type="number" min="1" value="1" aria-label="Quantity">
+          <button class="btn btn-primary" type="button" id="addKit" style="flex:1;height:52px">Add to cart</button>
+        </div>
+        <a class="btn btn-line" href="greenwave-checkout-mockup.html" style="width:100%">Go to checkout</a>
+
+        <ul class="pdp-points">
+          <li>✓ 8 filters — typical 1 bedroom house, 700–1,000 sq ft</li>
+          <li>✓ Built-in outlet so you don’t lose the receptacle</li>
+          <li>✓ UL 120V / 15A · RoHS</li>
+          <li>✓ Add the $200 test kit if you want to measure first</li>
+        </ul>
+        <div class="volume">
+          <strong>Buying singles instead?</strong> 1–4 filters $40 · 5–9 $36.50 · 10+ $33.25. Kits already include the volume break.
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="padding:56px 0 0">
+      <h2 style="font-size:32px;margin-bottom:18px;font-weight:600">Don’t leave this page confused</h2>
+      <div class="shop-grid">
+        <article class="product">
+          <div class="product-body">
+            <h3>Not sure yet?</h3>
+            <p>Test kit $200 — meter, 2 filters, outlet tester. Then come back for this kit.</p>
+            <button class="btn btn-primary" type="button" data-quick-add='{"id":"test","name":"Dirty Electricity Test Kit","price":200,"prong":"3","qty":1}'>Add test kit</button>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-body">
+            <h3>House too big?</h3>
+            <p>2 bedroom house kit is 12 filters / $399. Use the finder if you have more rooms.</p>
+            <a class="btn btn-line" href="greenwave-product-mockup.html?kit=2br-house&prong=3">See 2 bedroom kit</a>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-body">
+            <h3>Need a meter only?</h3>
+            <p>Broadband EMI meter $186. Don’t use an RF meter to judge dirty electricity.</p>
+            <button class="btn btn-primary" type="button" data-quick-add='{"id":"meter","name":"Broadband EMI Meter","price":186,"prong":"3","qty":1}'>Add meter</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-bottom">Product page mockup · Greenwave Filters · For client review</div>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><strong>Cart</strong><button class="icon-btn" id="closeCart" type="button">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="summary-row total"><span>Subtotal</span><span id="cartSubtotal">$0</span></div>
+      <a class="btn btn-primary" href="greenwave-checkout-mockup.html" style="width:100%;margin-top:12px">Checkout</a>
+    </div>
+  </aside>
+  <script src="greenwave-mockup.js"></script>
+</body>
+</html>
