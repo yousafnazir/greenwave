@@ -267,9 +267,10 @@ button, input, select { font: inherit; }
   z-index: 1;
 }
 .hero-family h1 {
-  font-size: clamp(42px, 4.8vw, 68px);
-  font-weight: 700;
-  line-height: 1.02;
+  font-size: clamp(38px, 4.4vw, 58px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
   max-width: 520px;
   margin-bottom: 18px;
 }
@@ -299,10 +300,10 @@ button, input, select { font: inherit; }
   padding: 78px 0 68px;
 }
 .around h2 {
-  font-size: clamp(32px, 4vw, 44px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
   margin: 0 auto 16px;
   max-width: 760px;
 }
@@ -383,10 +384,10 @@ button, input, select { font: inherit; }
 .protect-copy { max-width: 460px; }
 .protect h2 {
   color: #1d6b43;
-  font-size: clamp(36px, 4.2vw, 52px);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-size: clamp(30px, 3.6vw, 44px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   margin: 0 0 16px;
 }
 .protect p {
@@ -532,7 +533,7 @@ button, input, select { font: inherit; }
   background: #fff; border-radius: 24px; padding: 22px;
   box-shadow: var(--shadow); border: 1px solid var(--line);
 }
-.finder-box h2 { font-family: Poppins, sans-serif; font-size: clamp(26px, 3vw, 34px); margin-bottom: 8px; font-weight: 600; letter-spacing: -0.03em; }
+.finder-box h2 { font-family: Poppins, sans-serif; font-size: clamp(24px, 2.8vw, 32px); margin-bottom: 8px; font-weight: 500; letter-spacing: -0.02em; }
 .finder-box > .eyebrow { margin-bottom: 8px; }
 .finder-box > p { color: var(--muted); font-size: 16px; margin-bottom: 22px; max-width: 640px; }
 .finder-row { display: grid; grid-template-columns: 1.2fr 1.3fr 1fr auto; gap: 12px; align-items: end; }
@@ -569,7 +570,8 @@ button, input, select { font: inherit; }
 /* ── Sections ── */
 .section { padding: 88px 0; }
 .section-head { max-width: 640px; margin-bottom: 36px; }
-.section-head h2 { font-family: Poppins, sans-serif; font-size: clamp(28px, 3.2vw, 40px); letter-spacing: -0.03em; line-height: 1.15; font-weight: 600; }
+#shop .section-head { max-width: 720px; margin-left: auto; margin-right: auto; text-align: center; }
+.section-head h2 { font-family: Poppins, sans-serif; font-size: clamp(26px, 3vw, 36px); letter-spacing: -0.02em; line-height: 1.2; font-weight: 500; }
 .section-head p { color: var(--muted); margin-top: 10px; font-size: 16px; }
 .eyebrow { color: var(--leaf); font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 8px; }
 
@@ -1365,10 +1367,10 @@ button, input, select { font: inherit; }
   border: 1px solid var(--line);
 }
 .informed-copy h2 {
-  font-size: clamp(28px, 3.2vw, 40px);
-  letter-spacing: -.03em;
-  line-height: 1.15;
-  font-weight: 600;
+  font-size: clamp(26px, 3vw, 36px);
+  letter-spacing: -.02em;
+  line-height: 1.2;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 .informed-copy > p {
@@ -1684,10 +1686,10 @@ button, input, select { font: inherit; }
 .closer-inner { position: relative; z-index: 1; max-width: 760px; }
 .closer .eyebrow { color: var(--mint-2); }
 .closer h2 {
-  font-size: clamp(34px, 5vw, 56px);
-  letter-spacing: -.04em;
-  line-height: 1.12;
-  font-weight: 600;
+  font-size: clamp(30px, 4.2vw, 46px);
+  letter-spacing: -.02em;
+  line-height: 1.18;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 .closer h2 em {
