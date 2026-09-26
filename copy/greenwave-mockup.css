@@ -239,7 +239,8 @@ button, input, select { font: inherit; }
 .hero.hero-family {
   display: flex;
   align-items: center;
-  min-height: 620px;
+  min-height: 100vh;
+  min-height: 100svh;
   padding: 128px 0 72px;
   background: #183020;
 }
@@ -1832,7 +1833,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .hero { padding: 108px 0 70px; }
-  .hero.hero-family { min-height: 680px; padding: 118px 0 56px; }
+  .hero.hero-family { min-height: 100svh; padding: 118px 0 56px; }
   .hero-family-shade {
     background: linear-gradient(90deg,
       #183020 0%,
